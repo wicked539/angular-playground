@@ -1,8 +1,12 @@
 <div ng-controller="schuleCtrl">
-	<input type="text" ng-model="schuleInput"/>
+	<input type="text" id="myInput"/>
 	<button ng-click="addItem()">add</button>
-	hello {{schuleInput}}!
+	hello <p id="myHelloDiv" refs="myInput"></p>!
 	<ul>
 		<div tobsch ng-repeat="item in list"></div>
 	</ul>
+
+
+	<input type="text" id="theotherinput"/>
+	blah <p id="theotherdiv" refs="theotherinput"></p>!
 </div>
